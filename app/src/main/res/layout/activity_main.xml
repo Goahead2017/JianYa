@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer">
+
+    <include layout="@layout/content_layout" />
+
+    <LinearLayout
+        android:id="@+id/drawer_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/celan_background"
+        android:layout_gravity="start">
+
+        <ImageButton
+            android:id="@+id/profile_image"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="134dp"
+            android:src="@drawable/music_choose"/>
+
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="140dp"
+            android:textSize="25sp"
+            android:text="啦啦啦"/>
+
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="140dp"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="我的收藏"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#AABBE1"/>
+
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="140dp"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="我的相册"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#AABBE1"/>
+
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="140dp"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="我的资料"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#AABBE1"/>
+
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="140dp"
+            android:textSize="20sp"
+            android:textColor="#F56D6D"
+            android:text="退出减呀"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#AABBE1"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

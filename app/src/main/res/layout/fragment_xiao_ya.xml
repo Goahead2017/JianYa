@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.administrator.jianya.xiaoya.lunbotu.ImageBarnnerFramLayout
+                    android:id="@+id/image_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="207dp"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginRight="34dp"
+                    android:layout_marginTop="20dp">
+                </com.administrator.jianya.xiaoya.lunbotu.ImageBarnnerFramLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/xiaohua_rect1"
+                    android:layout_marginTop="25dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginLeft="35dp"
+                        android:textSize="24sp"
+                        android:textColor="#1051C5"
+                        android:text="笑话精选"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="59dp"
+                        android:textSize="18sp"
+                        android:textColor="#598EEE"
+                        android:text="更多"
+                        android:layout_marginRight="59dp"
+                        android:layout_alignParentEnd="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="33dp"
+                        android:src="@drawable/right_arrow"
+                        android:layout_marginTop="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="33dp" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:nestedScrollingEnabled="false">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

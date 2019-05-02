@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_item_textview"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            android:src="@drawable/geren"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ffffff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="46dp"
+            android:layout_marginStart="46dp">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginEnd="100dp"
+                android:textSize="20sp"
+                android:text="用户名"
+                />
+            <TextView
+                android:id="@+id/signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginEnd="50dp"
+                android:textSize="20sp"
+                android:text="个人简介"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shuru"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_layout">
+    </TextView>
+
+</LinearLayout>
